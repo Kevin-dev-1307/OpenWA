@@ -25,3 +25,7 @@ test('the API keys stylesheet uses logical sides only', () => {
 test('the chats stylesheet uses logical sides only', () => {
   assert.deepEqual(physicalSides('./Chats.css'), []);
 });
+
+test('the label board stylesheet uses logical sides only', () => {
+  assert.deepEqual(physicalSides('./Board.css'), []);
+});

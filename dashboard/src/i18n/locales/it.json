@@ -64,6 +64,7 @@
     "dashboard": "Dashboard",
     "sessions": "Sessioni",
     "chats": "Chat",
+    "board": "Bacheca",
     "webhooks": "Webhook",
     "templates": "Modelli",
     "apiKeys": "Chiavi API",
@@ -206,6 +207,29 @@
       "read": "Letto",
       "failed": "Fallito"
     }
+  },
+  "board": {
+    "subtitle": "Chat raggruppate per etichetta WhatsApp Business. Trascina una scheda per cambiarne l'etichetta.",
+    "unlabeled": "Senza etichetta",
+    "emptyColumn": "Nessuna chat",
+    "wwjsNotice": "Crea o rinomina le etichette dall'app WhatsApp Business sul telefono.",
+    "readOnly": "Questa chiave è di sola lettura: per spostare le schede serve una chiave da operatore.",
+    "notSupportedTitle": "Non disponibile con questo motore",
+    "notSupportedDesc": "Il motore Baileys non può elencare le chat per etichetta; la bacheca richiede il motore whatsapp-web.js.",
+    "emptyTitle": "Ancora nessuna etichetta",
+    "emptyDesc": "Le etichette provengono da WhatsApp Business. Creale nell'app WhatsApp Business sul telefono, poi aggiorna.",
+    "errorTitle": "Impossibile caricare la bacheca",
+    "errorDesc": "Verifica che la sessione sia connessa e riprova.",
+    "forbiddenTitle": "Nessun accesso alle etichette",
+    "forbiddenDesc": "Questa chiave API non può leggere le etichette di questa sessione.",
+    "dragInstructions": "Premi Invio per aprire la chat. Premi Spazio per prendere la scheda, le frecce per scegliere una colonna e di nuovo Spazio per rilasciarla. Esc annulla.",
+    "pickedUp": "Hai preso {{chat}} in {{column}}.",
+    "over": "Sopra {{column}}.",
+    "dropped": "{{chat}} spostata in {{column}}.",
+    "cancelled": "Spostamento annullato.",
+    "moveFailed": "Impossibile spostare la chat",
+    "columnLabel": "{{column}}, {{total}} chat",
+    "openChat": "Apri la chat con {{chat}}"
   },
   "errorBoundary": {
     "title": "Qualcosa è andato storto",

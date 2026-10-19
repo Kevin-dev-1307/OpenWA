@@ -64,6 +64,7 @@
     "dashboard": "Tableau de bord",
     "sessions": "Sessions",
     "chats": "Discussions",
+    "board": "Tableau",
     "webhooks": "Webhooks",
     "templates": "Templates",
     "apiKeys": "Clés API",
@@ -206,6 +207,29 @@
       "read": "Lu",
       "failed": "Échec"
     }
+  },
+  "board": {
+    "subtitle": "Discussions regroupées par étiquette WhatsApp Business. Faites glisser une carte pour changer son étiquette.",
+    "unlabeled": "Sans étiquette",
+    "emptyColumn": "Aucune discussion",
+    "wwjsNotice": "Créez ou renommez les étiquettes depuis l'application WhatsApp Business de votre téléphone.",
+    "readOnly": "Cette clé est en lecture seule : déplacer des cartes nécessite une clé opérateur.",
+    "notSupportedTitle": "Indisponible avec ce moteur",
+    "notSupportedDesc": "Le moteur Baileys ne peut pas lister les discussions par étiquette ; le tableau nécessite le moteur whatsapp-web.js.",
+    "emptyTitle": "Aucune étiquette pour l'instant",
+    "emptyDesc": "Les étiquettes viennent de WhatsApp Business. Créez-les dans l'application WhatsApp Business de votre téléphone, puis actualisez.",
+    "errorTitle": "Impossible de charger le tableau",
+    "errorDesc": "Vérifiez que la session est connectée et réessayez.",
+    "forbiddenTitle": "Pas d'accès aux étiquettes",
+    "forbiddenDesc": "Cette clé API n'est pas autorisée à lire les étiquettes de cette session.",
+    "dragInstructions": "Appuyez sur Entrée pour ouvrir la discussion. Appuyez sur Espace pour saisir la carte, sur les flèches pour choisir une colonne, puis de nouveau sur Espace pour la déposer. Échap annule.",
+    "pickedUp": "{{chat}} saisi dans {{column}}.",
+    "over": "Au-dessus de {{column}}.",
+    "dropped": "{{chat}} déplacé vers {{column}}.",
+    "cancelled": "Déplacement annulé.",
+    "moveFailed": "Impossible de déplacer la discussion",
+    "columnLabel": "{{column}}, {{total}} discussions",
+    "openChat": "Ouvrir la discussion avec {{chat}}"
   },
   "errorBoundary": {
     "title": "Une erreur est survenue",

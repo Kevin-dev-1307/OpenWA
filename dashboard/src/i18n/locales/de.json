@@ -62,6 +62,7 @@
     "dashboard": "Dashboard",
     "sessions": "Sitzungen",
     "chats": "Chats",
+    "board": "Board",
     "webhooks": "Webhooks",
     "templates": "Vorlagen",
     "apiKeys": "API-Schlüssel",
@@ -201,6 +202,29 @@
       "read": "Gelesen",
       "failed": "Fehlgeschlagen"
     }
+  },
+  "board": {
+    "subtitle": "Chats nach ihrem WhatsApp-Business-Label gruppiert. Ziehe eine Karte, um ihr Label zu ändern.",
+    "unlabeled": "Ohne Label",
+    "emptyColumn": "Keine Chats",
+    "wwjsNotice": "Labels erstellst oder benennst du in der WhatsApp-Business-App auf deinem Handy.",
+    "readOnly": "Dieser Schlüssel ist schreibgeschützt: Zum Verschieben von Karten ist ein Operator-Schlüssel nötig.",
+    "notSupportedTitle": "Mit dieser Engine nicht verfügbar",
+    "notSupportedDesc": "Die Baileys-Engine kann Chats nicht nach Label auflisten; das Board benötigt die whatsapp-web.js-Engine.",
+    "emptyTitle": "Noch keine Labels",
+    "emptyDesc": "Labels stammen aus WhatsApp Business. Erstelle sie in der WhatsApp-Business-App auf deinem Handy und aktualisiere dann.",
+    "errorTitle": "Das Board konnte nicht geladen werden",
+    "errorDesc": "Prüfe, ob die Sitzung verbunden ist, und versuche es erneut.",
+    "forbiddenTitle": "Kein Zugriff auf Labels",
+    "forbiddenDesc": "Dieser API-Schlüssel darf die Labels dieser Sitzung nicht lesen.",
+    "dragInstructions": "Drücke Enter, um den Chat zu öffnen. Drücke die Leertaste, um die Karte aufzunehmen, die Pfeiltasten, um eine Spalte zu wählen, und erneut die Leertaste, um sie abzulegen. Escape bricht ab.",
+    "pickedUp": "{{chat}} in {{column}} aufgenommen.",
+    "over": "Über {{column}}.",
+    "dropped": "{{chat}} nach {{column}} verschoben.",
+    "cancelled": "Verschieben abgebrochen.",
+    "moveFailed": "Der Chat konnte nicht verschoben werden",
+    "columnLabel": "{{column}}, {{total}} Chats",
+    "openChat": "Chat mit {{chat}} öffnen"
   },
   "errorBoundary": {
     "title": "Etwas ist schiefgelaufen",

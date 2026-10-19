@@ -64,6 +64,7 @@
     "dashboard": "Panel",
     "sessions": "Sesiones",
     "chats": "Chats",
+    "board": "Tablero",
     "webhooks": "Webhooks",
     "apiKeys": "Claves API",
     "messageTester": "Probador de mensajes",
@@ -206,6 +207,29 @@
       "read": "Leído",
       "failed": "Fallido"
     }
+  },
+  "board": {
+    "subtitle": "Chats agrupados por su etiqueta de WhatsApp Business. Arrastra una tarjeta para cambiar su etiqueta.",
+    "unlabeled": "Sin etiqueta",
+    "emptyColumn": "Sin chats",
+    "wwjsNotice": "Crea o renombra etiquetas desde la app WhatsApp Business del celular.",
+    "readOnly": "Esta clave es de solo lectura: para mover tarjetas se necesita una clave de operador.",
+    "notSupportedTitle": "No disponible con este motor",
+    "notSupportedDesc": "El motor Baileys no puede listar chats por etiqueta; el tablero necesita el motor whatsapp-web.js.",
+    "emptyTitle": "Aún no hay etiquetas",
+    "emptyDesc": "Las etiquetas vienen de WhatsApp Business. Créalas en la app WhatsApp Business del celular y luego actualiza.",
+    "errorTitle": "No se pudo cargar el tablero",
+    "errorDesc": "Revisa que la sesión esté conectada e inténtalo de nuevo.",
+    "forbiddenTitle": "Sin acceso a las etiquetas",
+    "forbiddenDesc": "Esta clave de API no tiene permiso para leer las etiquetas de esta sesión.",
+    "dragInstructions": "Pulsa Enter para abrir el chat. Pulsa Espacio para tomar la tarjeta, las flechas para elegir una columna y Espacio otra vez para soltarla. Escape cancela.",
+    "pickedUp": "Tomaste {{chat}} en {{column}}.",
+    "over": "Sobre {{column}}.",
+    "dropped": "{{chat}} se movió a {{column}}.",
+    "cancelled": "Movimiento cancelado.",
+    "moveFailed": "No se pudo mover el chat",
+    "columnLabel": "{{column}}, {{total}} chats",
+    "openChat": "Abrir el chat con {{chat}}"
   },
   "errorBoundary": {
     "title": "Algo salió mal",

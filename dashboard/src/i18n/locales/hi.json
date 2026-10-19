@@ -62,6 +62,7 @@
     "dashboard": "डैशबोर्ड",
     "sessions": "सत्र (Sessions)",
     "chats": "चैट्स",
+    "board": "बोर्ड",
     "webhooks": "वेबहुक (Webhooks)",
     "templates": "टेम्पलेट्स",
     "apiKeys": "API कुंजियाँ",
@@ -201,6 +202,29 @@
       "read": "पढ़ा गया",
       "failed": "विफल"
     }
+  },
+  "board": {
+    "subtitle": "चैट उनके WhatsApp Business लेबल के अनुसार समूहित हैं। लेबल बदलने के लिए कार्ड खींचें।",
+    "unlabeled": "बिना लेबल",
+    "emptyColumn": "कोई चैट नहीं",
+    "wwjsNotice": "लेबल अपने फ़ोन पर WhatsApp Business ऐप से बनाएँ या उनका नाम बदलें।",
+    "readOnly": "यह कुंजी केवल-पढ़ने के लिए है: कार्ड हटाने के लिए ऑपरेटर कुंजी चाहिए।",
+    "notSupportedTitle": "इस इंजन के साथ उपलब्ध नहीं",
+    "notSupportedDesc": "Baileys इंजन लेबल के अनुसार चैट सूचीबद्ध नहीं कर सकता, इसलिए बोर्ड को whatsapp-web.js इंजन चाहिए।",
+    "emptyTitle": "अभी कोई लेबल नहीं",
+    "emptyDesc": "लेबल WhatsApp Business से आते हैं। उन्हें अपने फ़ोन के WhatsApp Business ऐप में बनाएँ, फिर रीफ़्रेश करें।",
+    "errorTitle": "बोर्ड लोड नहीं हो सका",
+    "errorDesc": "जाँचें कि सत्र कनेक्ट है और फिर से प्रयास करें।",
+    "forbiddenTitle": "लेबल तक पहुँच नहीं",
+    "forbiddenDesc": "इस API कुंजी को इस सत्र के लेबल पढ़ने की अनुमति नहीं है।",
+    "dragInstructions": "चैट खोलने के लिए Enter दबाएँ। कार्ड उठाने के लिए Space, कॉलम चुनने के लिए तीर कुंजियाँ, और छोड़ने के लिए फिर से Space दबाएँ। Escape रद्द करता है।",
+    "pickedUp": "{{column}} में {{chat}} उठाया गया।",
+    "over": "{{column}} के ऊपर।",
+    "dropped": "{{chat}} को {{column}} में ले जाया गया।",
+    "cancelled": "ले जाना रद्द किया गया।",
+    "moveFailed": "चैट को ले जाया नहीं जा सका",
+    "columnLabel": "{{column}}, {{total}} चैट",
+    "openChat": "{{chat}} के साथ चैट खोलें"
   },
   "errorBoundary": {
     "title": "कुछ गलत हो गया",

@@ -70,6 +70,7 @@
     "dashboard": "لوحة التحكم",
     "sessions": "الجلسات",
     "chats": "المحادثات",
+    "board": "اللوحة",
     "webhooks": "الويب هوك",
     "templates": "القوالب",
     "apiKeys": "مفاتيح API",
@@ -222,6 +223,29 @@
       "read": "تمت القراءة",
       "failed": "فشل"
     }
+  },
+  "board": {
+    "subtitle": "المحادثات مجمّعة حسب تصنيف WhatsApp Business. اسحب بطاقة لتغيير تصنيفها.",
+    "unlabeled": "بلا تصنيف",
+    "emptyColumn": "لا توجد محادثات",
+    "wwjsNotice": "أنشئ التصنيفات أو أعد تسميتها من تطبيق WhatsApp Business على هاتفك.",
+    "readOnly": "هذا المفتاح للقراءة فقط: نقل البطاقات يتطلب مفتاح مشغّل.",
+    "notSupportedTitle": "غير متاح مع هذا المحرك",
+    "notSupportedDesc": "لا يستطيع محرك Baileys عرض المحادثات حسب التصنيف، لذا تتطلب اللوحة محرك whatsapp-web.js.",
+    "emptyTitle": "لا توجد تصنيفات بعد",
+    "emptyDesc": "تأتي التصنيفات من WhatsApp Business. أنشئها في تطبيق WhatsApp Business على هاتفك ثم حدّث الصفحة.",
+    "errorTitle": "تعذّر تحميل اللوحة",
+    "errorDesc": "تحقق من أن الجلسة متصلة ثم أعد المحاولة.",
+    "forbiddenTitle": "لا يوجد وصول إلى التصنيفات",
+    "forbiddenDesc": "مفتاح API هذا غير مسموح له بقراءة تصنيفات هذه الجلسة.",
+    "dragInstructions": "اضغط Enter لفتح المحادثة. اضغط المسافة لالتقاط البطاقة، والأسهم لاختيار عمود، ثم المسافة مرة أخرى لإفلاتها. Escape يلغي.",
+    "pickedUp": "تم التقاط {{chat}} من {{column}}.",
+    "over": "فوق {{column}}.",
+    "dropped": "تم نقل {{chat}} إلى {{column}}.",
+    "cancelled": "تم إلغاء النقل.",
+    "moveFailed": "تعذّر نقل المحادثة",
+    "columnLabel": "{{column}}، {{total}} محادثات",
+    "openChat": "فتح المحادثة مع {{chat}}"
   },
   "errorBoundary": {
     "title": "حدث خطأ ما",

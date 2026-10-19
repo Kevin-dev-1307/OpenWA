@@ -66,6 +66,7 @@
     "dashboard": "דאשבורד",
     "sessions": "Sessions",
     "chats": "שיחות",
+    "board": "לוח",
     "webhooks": "Webhooks",
     "templates": "תבניות",
     "apiKeys": "מפתחות API",
@@ -212,6 +213,29 @@
       "read": "נקרא",
       "failed": "נכשל"
     }
+  },
+  "board": {
+    "subtitle": "צ'אטים מקובצים לפי תווית WhatsApp Business. גררו כרטיס כדי לשנות את התווית שלו.",
+    "unlabeled": "ללא תווית",
+    "emptyColumn": "אין צ'אטים",
+    "wwjsNotice": "יצירה או שינוי שם של תוויות נעשים באפליקציית WhatsApp Business בטלפון.",
+    "readOnly": "המפתח הזה לקריאה בלבד: כדי להזיז כרטיסים נדרש מפתח מפעיל.",
+    "notSupportedTitle": "לא זמין במנוע הזה",
+    "notSupportedDesc": "מנוע Baileys לא יכול להציג צ'אטים לפי תווית, ולכן הלוח דורש את מנוע whatsapp-web.js.",
+    "emptyTitle": "אין עדיין תוויות",
+    "emptyDesc": "התוויות מגיעות מ-WhatsApp Business. צרו אותן באפליקציית WhatsApp Business בטלפון ואז רעננו.",
+    "errorTitle": "לא ניתן לטעון את הלוח",
+    "errorDesc": "ודאו שהסשן מחובר ונסו שוב.",
+    "forbiddenTitle": "אין גישה לתוויות",
+    "forbiddenDesc": "למפתח ה-API הזה אין הרשאה לקרוא את התוויות של הסשן הזה.",
+    "dragInstructions": "הקישו Enter כדי לפתוח את הצ'אט. הקישו רווח כדי להרים את הכרטיס, בחצים כדי לבחור עמודה, ושוב רווח כדי להניח אותו. Escape מבטל.",
+    "pickedUp": "{{chat}} הורם מתוך {{column}}.",
+    "over": "מעל {{column}}.",
+    "dropped": "{{chat}} הועבר אל {{column}}.",
+    "cancelled": "ההעברה בוטלה.",
+    "moveFailed": "לא ניתן להעביר את הצ'אט",
+    "columnLabel": "{{column}}, {{total}} צ'אטים",
+    "openChat": "פתיחת הצ'אט עם {{chat}}"
   },
   "errorBoundary": {
     "title": "משהו השתבש",

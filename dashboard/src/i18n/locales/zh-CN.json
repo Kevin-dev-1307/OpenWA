@@ -62,6 +62,7 @@
     "dashboard": "仪表盘",
     "sessions": "会话",
     "chats": "聊天",
+    "board": "看板",
     "webhooks": "Webhooks",
     "templates": "模板",
     "apiKeys": "API 密钥",
@@ -201,6 +202,29 @@
       "read": "已读",
       "failed": "发送失败"
     }
+  },
+  "board": {
+    "subtitle": "按 WhatsApp Business 标签分组的聊天。拖动卡片即可更改其标签。",
+    "unlabeled": "无标签",
+    "emptyColumn": "没有聊天",
+    "wwjsNotice": "请在手机上的 WhatsApp Business 应用中创建或重命名标签。",
+    "readOnly": "此密钥为只读：移动卡片需要操作员密钥。",
+    "notSupportedTitle": "此引擎不可用",
+    "notSupportedDesc": "Baileys 引擎无法按标签列出聊天，看板需要 whatsapp-web.js 引擎。",
+    "emptyTitle": "暂无标签",
+    "emptyDesc": "标签来自 WhatsApp Business。请在手机上的 WhatsApp Business 应用中创建，然后刷新。",
+    "errorTitle": "无法加载看板",
+    "errorDesc": "请确认会话已连接，然后重试。",
+    "forbiddenTitle": "无权访问标签",
+    "forbiddenDesc": "此 API 密钥无权读取该会话的标签。",
+    "dragInstructions": "按 Enter 打开聊天。按空格键拿起卡片，用方向键选择列，再按空格键放下。按 Escape 取消。",
+    "pickedUp": "已在 {{column}} 中拿起 {{chat}}。",
+    "over": "位于 {{column}} 上方。",
+    "dropped": "已将 {{chat}} 移到 {{column}}。",
+    "cancelled": "已取消移动。",
+    "moveFailed": "无法移动聊天",
+    "columnLabel": "{{column}}，{{total}} 个聊天",
+    "openChat": "打开与 {{chat}} 的聊天"
   },
   "errorBoundary": {
     "title": "出了点问题",

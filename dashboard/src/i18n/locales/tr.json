@@ -62,6 +62,7 @@
     "dashboard": "Kontrol Paneli",
     "sessions": "Oturumlar",
     "chats": "Sohbetler",
+    "board": "Pano",
     "webhooks": "Webhook'lar",
     "templates": "Şablonlar",
     "apiKeys": "API Anahtarları",
@@ -201,6 +202,29 @@
       "read": "Okundu",
       "failed": "Başarısız"
     }
+  },
+  "board": {
+    "subtitle": "Sohbetler WhatsApp Business etiketlerine göre gruplanır. Etiketini değiştirmek için bir kartı sürükleyin.",
+    "unlabeled": "Etiketsiz",
+    "emptyColumn": "Sohbet yok",
+    "wwjsNotice": "Etiketleri telefonunuzdaki WhatsApp Business uygulamasından oluşturun veya yeniden adlandırın.",
+    "readOnly": "Bu anahtar salt okunur: kartları taşımak için operatör anahtarı gerekir.",
+    "notSupportedTitle": "Bu motorla kullanılamaz",
+    "notSupportedDesc": "Baileys motoru sohbetleri etikete göre listeleyemez; pano whatsapp-web.js motorunu gerektirir.",
+    "emptyTitle": "Henüz etiket yok",
+    "emptyDesc": "Etiketler WhatsApp Business'tan gelir. Telefonunuzdaki WhatsApp Business uygulamasında oluşturun, ardından yenileyin.",
+    "errorTitle": "Pano yüklenemedi",
+    "errorDesc": "Oturumun bağlı olduğunu kontrol edip tekrar deneyin.",
+    "forbiddenTitle": "Etiketlere erişim yok",
+    "forbiddenDesc": "Bu API anahtarının bu oturumun etiketlerini okuma izni yok.",
+    "dragInstructions": "Sohbeti açmak için Enter'a basın. Kartı almak için Boşluk'a, sütun seçmek için ok tuşlarına, bırakmak için yeniden Boşluk'a basın. Escape iptal eder.",
+    "pickedUp": "{{chat}}, {{column}} içinde alındı.",
+    "over": "{{column}} üzerinde.",
+    "dropped": "{{chat}}, {{column}} sütununa taşındı.",
+    "cancelled": "Taşıma iptal edildi.",
+    "moveFailed": "Sohbet taşınamadı",
+    "columnLabel": "{{column}}, {{total}} sohbet",
+    "openChat": "{{chat}} ile sohbeti aç"
   },
   "errorBoundary": {
     "title": "Bir şeyler ters gitti",

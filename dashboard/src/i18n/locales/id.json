@@ -62,6 +62,7 @@
     "dashboard": "Dasbor",
     "sessions": "Sesi",
     "chats": "Obrolan",
+    "board": "Papan",
     "webhooks": "Webhook",
     "templates": "Templat",
     "apiKeys": "Kunci API",
@@ -201,6 +202,29 @@
       "read": "Dibaca",
       "failed": "Gagal"
     }
+  },
+  "board": {
+    "subtitle": "Chat dikelompokkan menurut label WhatsApp Business. Seret kartu untuk mengubah labelnya.",
+    "unlabeled": "Tanpa label",
+    "emptyColumn": "Tidak ada chat",
+    "wwjsNotice": "Buat atau ganti nama label dari aplikasi WhatsApp Business di ponsel Anda.",
+    "readOnly": "Kunci ini hanya-baca: memindahkan kartu memerlukan kunci operator.",
+    "notSupportedTitle": "Tidak tersedia dengan mesin ini",
+    "notSupportedDesc": "Mesin Baileys tidak dapat menampilkan chat berdasarkan label; papan memerlukan mesin whatsapp-web.js.",
+    "emptyTitle": "Belum ada label",
+    "emptyDesc": "Label berasal dari WhatsApp Business. Buat label di aplikasi WhatsApp Business di ponsel Anda, lalu muat ulang.",
+    "errorTitle": "Papan tidak dapat dimuat",
+    "errorDesc": "Pastikan sesi terhubung, lalu coba lagi.",
+    "forbiddenTitle": "Tidak ada akses ke label",
+    "forbiddenDesc": "Kunci API ini tidak diizinkan membaca label sesi ini.",
+    "dragInstructions": "Tekan Enter untuk membuka chat. Tekan Spasi untuk mengambil kartu, tombol panah untuk memilih kolom, dan Spasi lagi untuk meletakkannya. Escape membatalkan.",
+    "pickedUp": "{{chat}} diambil dari {{column}}.",
+    "over": "Di atas {{column}}.",
+    "dropped": "{{chat}} dipindahkan ke {{column}}.",
+    "cancelled": "Pemindahan dibatalkan.",
+    "moveFailed": "Chat tidak dapat dipindahkan",
+    "columnLabel": "{{column}}, {{total}} chat",
+    "openChat": "Buka chat dengan {{chat}}"
   },
   "errorBoundary": {
     "title": "Terjadi kesalahan",

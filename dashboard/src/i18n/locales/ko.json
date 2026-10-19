@@ -62,6 +62,7 @@
     "dashboard": "대시보드",
     "sessions": "세션",
     "chats": "채팅",
+    "board": "보드",
     "webhooks": "웹훅",
     "templates": "템플릿",
     "apiKeys": "API 키",
@@ -201,6 +202,29 @@
       "read": "읽음",
       "failed": "실패"
     }
+  },
+  "board": {
+    "subtitle": "WhatsApp Business 라벨별로 채팅을 묶어 보여줍니다. 카드를 끌어 라벨을 바꾸세요.",
+    "unlabeled": "라벨 없음",
+    "emptyColumn": "채팅 없음",
+    "wwjsNotice": "라벨은 휴대폰의 WhatsApp Business 앱에서 만들거나 이름을 바꾸세요.",
+    "readOnly": "읽기 전용 키입니다. 카드를 옮기려면 운영자 키가 필요합니다.",
+    "notSupportedTitle": "이 엔진에서는 사용할 수 없음",
+    "notSupportedDesc": "Baileys 엔진은 라벨별 채팅 목록을 제공하지 않으므로 보드에는 whatsapp-web.js 엔진이 필요합니다.",
+    "emptyTitle": "아직 라벨이 없습니다",
+    "emptyDesc": "라벨은 WhatsApp Business에서 가져옵니다. 휴대폰의 WhatsApp Business 앱에서 만든 뒤 새로고침하세요.",
+    "errorTitle": "보드를 불러오지 못했습니다",
+    "errorDesc": "세션이 연결되어 있는지 확인한 후 다시 시도하세요.",
+    "forbiddenTitle": "라벨에 접근할 수 없음",
+    "forbiddenDesc": "이 API 키에는 이 세션의 라벨을 읽을 권한이 없습니다.",
+    "dragInstructions": "Enter를 누르면 채팅이 열립니다. Space로 카드를 집고, 화살표 키로 열을 고른 뒤, 다시 Space로 내려놓으세요. Escape는 취소합니다.",
+    "pickedUp": "{{column}}에서 {{chat}}을(를) 집었습니다.",
+    "over": "{{column}} 위.",
+    "dropped": "{{chat}}을(를) {{column}}(으)로 옮겼습니다.",
+    "cancelled": "이동을 취소했습니다.",
+    "moveFailed": "채팅을 옮기지 못했습니다",
+    "columnLabel": "{{column}}, 채팅 {{total}}개",
+    "openChat": "{{chat}} 채팅 열기"
   },
   "errorBoundary": {
     "title": "문제가 발생했습니다",

@@ -62,6 +62,7 @@
     "dashboard": "Dashboard",
     "sessions": "Sessions",
     "chats": "Chats",
+    "board": "Board",
     "webhooks": "Webhooks",
     "templates": "Templates",
     "apiKeys": "API Keys",
@@ -201,6 +202,29 @@
       "read": "Read",
       "failed": "Failed"
     }
+  },
+  "board": {
+    "subtitle": "Chats grouped by their WhatsApp Business label. Drag a card to change its label.",
+    "unlabeled": "No label",
+    "emptyColumn": "No chats",
+    "wwjsNotice": "Create or rename labels from the WhatsApp Business app on your phone.",
+    "readOnly": "This key is read-only: moving cards needs an operator key.",
+    "notSupportedTitle": "Not available with this engine",
+    "notSupportedDesc": "The Baileys engine cannot list chats by label, so the board needs the whatsapp-web.js engine.",
+    "emptyTitle": "No labels yet",
+    "emptyDesc": "Labels come from WhatsApp Business. Create them in the WhatsApp Business app on your phone, then refresh.",
+    "errorTitle": "Couldn't load the board",
+    "errorDesc": "Check that the session is connected and try again.",
+    "forbiddenTitle": "No access to labels",
+    "forbiddenDesc": "This API key is not allowed to read labels for this session.",
+    "dragInstructions": "Press Enter to open the chat. Press Space to pick the card up, the arrow keys to choose a column, and Space again to drop it. Escape cancels.",
+    "pickedUp": "Picked up {{chat}} in {{column}}.",
+    "over": "Over {{column}}.",
+    "dropped": "Moved {{chat}} to {{column}}.",
+    "cancelled": "Move cancelled.",
+    "moveFailed": "Couldn't move the chat",
+    "columnLabel": "{{column}}, {{total}} chats",
+    "openChat": "Open chat with {{chat}}"
   },
   "errorBoundary": {
     "title": "Something went wrong",
