@@ -287,6 +287,20 @@ export function Chats() {
     current.showErrorToast(current.t(key), err instanceof Error ? err.message : undefined);
   }, []);
 
+  // A search hit or a deep link waiting for its chat to open; see the global-search section below.
+  const pendingHitRef = useRef<{ sessionId: string; chatId: string; waMessageId: string; opened?: boolean } | null>(
+    null,
+  );
+
+  // A link from another page (the label board) that names a chat to open: /chats?session=…&chat=….
+  // Read once at mount; the chat opens through the same pending-hit path a search hit takes.
+  const [deepLink] = useState(() => {
+    const params = new URLSearchParams(window.location.search);
+    const sessionId = params.get('session');
+    const chatId = params.get('chat');
+    return sessionId && chatId ? { sessionId, chatId } : null;
+  });
+
   // 1. Fetch available connected sessions on mount
   useEffect(() => {
     const loadSessions = async () => {
@@ -295,7 +309,11 @@ export function Chats() {
         const list = await sessionApi.list();
         const readySessions = list.filter(s => s.status === 'ready');
         setSessions(readySessions);
-        if (readySessions.length > 0) {
+        const linked = deepLink ? readySessions.find(s => s.id === deepLink.sessionId) : undefined;
+        if (deepLink && linked) {
+          pendingHitRef.current = { sessionId: linked.id, chatId: deepLink.chatId, waMessageId: '' };
+          setSelectedSessionId(linked.id);
+        } else if (readySessions.length > 0) {
           setSelectedSessionId(readySessions[0].id);
         }
       } catch (err) {
@@ -305,7 +323,7 @@ export function Chats() {
       }
     };
     void loadSessions();
-  }, [showLoadError]);
+  }, [showLoadError, deepLink]);
 
   // 2. Fetch chats when active session changes. A session switch does not cancel the list still
   // loading for the session left behind, so an answer for any session but the latest call's is
@@ -845,9 +863,7 @@ export function Chats() {
   // async gap: the chat-select effect picks it up once the list lands, and the scroll effect runs
   // once the messages have rendered. `opened` marks a hit whose chat has been opened, so the user
   // leaving that chat before its thread renders drops the hit instead of being sent back into it.
-  const pendingHitRef = useRef<{ sessionId: string; chatId: string; waMessageId: string; opened?: boolean } | null>(
-    null,
-  );
+  // (pendingHitRef is declared above, next to the board deep link that also feeds it.)
   // Bumped with every hit, so a hit in the chat already open still re-runs the scroll effect, where
   // every other state it sets is unchanged and React skips the render.
   const [hitSeq, setHitSeq] = useState(0);

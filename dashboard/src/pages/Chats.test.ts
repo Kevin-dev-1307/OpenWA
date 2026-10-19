@@ -492,6 +492,28 @@ test('Chats renders: session/chat list loads, a chat opens, and a message sends'
   });
 });
 
+test('a link from the label board opens the chat it names', async () => {
+  const { within } = rtl;
+  twoSessions = true;
+  window.history.replaceState(null, '', `/chats?session=${SESSION_2.id}&chat=${encodeURIComponent(CHAT_2.id)}`);
+  try {
+    const { container } = renderChats();
+    // The linked session is selected over the first one, and the named chat opens on its own.
+    await waitForSelectedSession(container, SESSION_2.id);
+    const header = await rtl.screen.findByRole('heading', { name: 'Carol' });
+    assert.ok(within(header.closest('.room-header') as HTMLElement).getByText(CHAT_2.id));
+  } finally {
+    window.history.replaceState(null, '', '/');
+    twoSessions = false;
+  }
+});
+
+async function waitForSelectedSession(container: HTMLElement, sessionId: string): Promise<void> {
+  await rtl.waitFor(() =>
+    assert.equal((container.querySelector('select.session-selector') as HTMLSelectElement | null)?.value, sessionId),
+  );
+}
+
 test('status compose modal posts a text status with the baileys recipient allow-list', async () => {
   const { screen, fireEvent, within, waitFor } = rtl;
   resetFetchCalls();

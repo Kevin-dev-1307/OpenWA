@@ -4,6 +4,7 @@ import type { UseQueryResult } from '@tanstack/react-query';
 import type { Channel, Chat, ContactStatusGroup, Session } from '../../services/api';
 import { useRole } from '../../hooks/useRole';
 import ChatAvatar from './ChatAvatar';
+import SessionSelect from './SessionSelect';
 
 export type ChatsTab = 'chats' | 'channels' | 'status';
 
@@ -131,23 +132,12 @@ function ChatSidebar({
     <aside className="chats-sidebar">
       <div className="sidebar-header-box">
         {/* Session selector */}
-        <div className="session-select-group">
-          <label className="form-label" htmlFor="csb-1">
-            {t('chats.sessionLabel')}
-          </label>
-          <select
-            id="csb-1"
-            value={selectedSessionId}
-            onChange={e => onSelectSession(e.target.value)}
-            className="session-selector"
-          >
-            {sessions.map(s => (
-              <option key={s.id} value={s.id}>
-                {s.name} ({s.phone || t('chats.noPhone')})
-              </option>
-            ))}
-          </select>
-        </div>
+        <SessionSelect
+          id="csb-1"
+          sessions={sessions}
+          selectedSessionId={selectedSessionId}
+          onSelectSession={onSelectSession}
+        />
 
         {/* Chats / Channels / Status tabs */}
         <div className="chats-tabs" role="tablist">
