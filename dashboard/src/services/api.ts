@@ -941,6 +941,35 @@ export const sessionApi = {
 };
 
 // =============================================================================
+// Label API (WhatsApp Business)
+// =============================================================================
+
+// Mirrors the backend LabelDto (GET /sessions/:id/labels). `hexColor` is display-only: the write
+// path takes a colour index the engines never map back, and the board never edits a label.
+export interface Label {
+  id: string;
+  name: string;
+  hexColor: string;
+}
+
+export const labelApi = {
+  list: (sessionId: string) => request<Label[]>(`/sessions/${sessionId}/labels`),
+  // whatsapp-web.js only: Baileys has no label query and answers 501. Filtered by the key's chat scope.
+  getChats: (sessionId: string, labelId: string) =>
+    request<Chat[]>(`/sessions/${sessionId}/labels/${encodeURIComponent(labelId)}/chats`),
+  addToChat: (sessionId: string, chatId: string, labelId: string) =>
+    request<{ success: boolean }>(`/sessions/${sessionId}/labels/chat/${encodeURIComponent(chatId)}`, {
+      method: 'POST',
+      body: JSON.stringify({ labelId }),
+    }),
+  removeFromChat: (sessionId: string, chatId: string, labelId: string) =>
+    request<{ success: boolean }>(
+      `/sessions/${sessionId}/labels/chat/${encodeURIComponent(chatId)}/${encodeURIComponent(labelId)}`,
+      { method: 'DELETE' },
+    ),
+};
+
+// =============================================================================
 // Webhook API
 // =============================================================================
 
